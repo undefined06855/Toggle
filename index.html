@@ -25,13 +25,14 @@
                 background-color: #fff;
             }
 
-            .switch {
+            .switch {                
                 width: 160px;
                 height: 100px;
+                scale: 1.25;
 
                 border: 2px solid #000;
 
-                border-radius: 50px;
+                border-radius: 150px;
 
                 display: flex;
                 align-items: center;
@@ -60,6 +61,31 @@
 
             .right::after {
                 translate: 100%;
+            }
+
+            .message {
+                position: fixed;
+                bottom: 5px;
+                right: 5px;
+
+                width: 10%;
+                padding: 50px;
+
+                background-color: rgba(110, 110, 110, 0.7);
+                border: 2px solid #000;
+                border-radius: 5px;
+
+                transition: bottom 2s ease-in;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                pointer-events: none;
+            }
+
+            .fadeout {
+                bottom: -100%;
             }
 
         </style>
