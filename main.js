@@ -135,11 +135,11 @@ class Message
         el.classList.add("message")
         el.innerText = msg
 
-        document.body.appendChild(el)
+        document.getElementById("message-wrapper").appendChild(el)
 
         setTimeout(() => {
             el.classList.add("fadeout")
-            setTimeout(() => el.remove(), 2000)
+            setTimeout(() => el.remove(), 500)
         }, 3000)
     }
 }
