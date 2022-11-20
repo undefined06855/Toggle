@@ -52,7 +52,7 @@
                 background-color: #fff;
                 box-shadow: 3px 3px 3px;
 
-                transition: translate .2s;
+                transition: translate .15s;
             }
             
             .right {
@@ -99,6 +99,16 @@
                 opacity: 0;
             }
 
+            #secret {
+                position: fixed;
+                bottom: 20px;
+                left: 20px;
+
+                opacity: 0;
+
+                transition: opacity 2s;
+            }
+
         </style>
     </head>
 
@@ -109,13 +119,11 @@
             <div class="switch"></div>
             <div class="switch"></div>
             <div class="switch"></div>
+            <div class="switch" id="secret"></div>
         </div>
+
         <span id="warning" style="display: none">Your screen is too small for Toggle.</span>
 
-        <div id="message-wrapper">
-
-        </div>
-        
         <script src="./main.js"></script>
     </body>
 </html>
